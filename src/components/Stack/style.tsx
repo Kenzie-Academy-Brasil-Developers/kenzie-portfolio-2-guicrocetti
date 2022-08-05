@@ -15,6 +15,13 @@ export const StackCard = styled("div", {
   justifyContent: "center",
   position: "relative",
 
+  '& div': {
+    width: '100%',
+    position: 'absolute',
+    background: 'rgba(18, 18, 20, 0.5)',
+    top: 0,
+},
+
   [`& ${Text}`]: {
     opacity: 0,
     position: "absolute",
@@ -51,4 +58,5 @@ export const StackCard = styled("div", {
       animation: `${scaleUp} 200ms`,
     },
   },
+
 });

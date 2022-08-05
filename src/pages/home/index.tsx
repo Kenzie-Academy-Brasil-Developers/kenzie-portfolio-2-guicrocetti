@@ -76,7 +76,7 @@ export const Home = (): JSX.Element => {
             </HeaderButtonsArea>
             <StackCards>
               {stackData.map((stack, index) => (
-                <Stack key={index} title={stack.title} icon={stack.img} />
+                <Stack key={index} title={stack.title} icon={stack.img} level={stack.level}/>
               ))}
             </StackCards>
           </HeaderContent>
